@@ -1,0 +1,1 @@
+# qaqshift_blog
