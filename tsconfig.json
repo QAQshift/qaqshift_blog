@@ -5,7 +5,13 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    // ...
-    "types": ["element-plus/global"]
-  }
+    //types 找到 对应 的类型声明
+    "types": ["vue","element-plus/global","./node_modules/@types", "./src/types"],
+    "baseUrl": ".",
+    // 编译器如何处理路径别名
+    "paths": {
+      "@/*": ["src/*"]
+    },
+  },
+  "exclude": ["node_modules"]
 }
